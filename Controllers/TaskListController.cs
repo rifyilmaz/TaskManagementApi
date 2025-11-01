@@ -28,7 +28,7 @@ namespace TaskManagementApi.Controllers
             return Ok(tasks);
         }
 
-        // GET: api/tasks/5
+        // GET: api/tasks/1
         [HttpGet("{id}")]
         public async Task<ActionResult<TaskItem>> GetTask(int id)
         {

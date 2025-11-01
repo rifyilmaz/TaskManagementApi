@@ -23,7 +23,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+TaskItemService srv = new TaskItemService();
+foreach (var item in srv.GetAllTasks())
+{
+    Console.WriteLine($"Task: {item.Title}, Priority: {item.Priority}");
+}
 // Serve static files from wwwroot
 app.UseDefaultFiles();
 app.UseStaticFiles();
