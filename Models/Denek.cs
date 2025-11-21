@@ -9,5 +9,6 @@ namespace TaskManagementApi.Models
     {
         public int Id { get; set; }
         public static string gozrengi { get; set; } = "";
+        //denem
     }
 }
